@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS | Technologie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <nav class="glass">
+        <div class="logo">NEXUS</div>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="vision.html">Vision</a>
+            <a href="technologie.html" style="color: var(--primary)">Technologie</a>
+        </div>
+        <button id="theme-toggle"><i class="ph ph-sun-dim"></i></button>
+    </nav>
+
+    <main>
+        <section class="hero-content fade-in">
+            <h1>CŒUR DU <span class="gradient-text">SYSTÈME</span></h1>
+            <p>Une infrastructure invisible mais omniprésente, propulsée par les dernières avancées en calcul distribué.</p>
+        </section>
+
+        <section class="tech-grid">
+            <div class="card glass fade-in delay-1">
+                <h2><i class="ph ph-cpu"></i> Architecture Core</h2>
+                <p>Notre noyau est construit sur WebAssembly pour une vitesse quasi-native. Fini les latences, place à l'instantanéité.</p>
+                <br>
+                <div class="tech-spec-list">
+                    <div class="spec-item">
+                        <span>Latence Réseau</span>
+                        <span style="color: var(--primary)">12ms</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Chiffrement</span>
+                        <span style="color: var(--secondary)">AES-256-GCM</span>
+                    </div>
+                    <div class="spec-item">
+                        <span>Disponibilité</span>
+                        <span style="color: var(--primary)">99.99%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card glass fade-in delay-2">
+                <h3>Métriques</h3>
+                <div style="margin-top: 20px;">
+                    <div style="display:flex; justify-content:space-between; font-size:0.9rem;">
+                        <span>Vitesse de Calcul</span>
+                        <span>98%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 98%"></div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 20px;">
+                    <div style="display:flex; justify-content:space-between; font-size:0.9rem;">
+                        <span>Optimisation AI</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 20px;">
+                    <div style="display:flex; justify-content:space-between; font-size:0.9rem;">
+                        <span>Sécurité</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

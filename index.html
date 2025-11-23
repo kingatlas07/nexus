@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interface futuriste moderne et responsive">
+    <title>NEXUS | Future Interface</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <nav class="glass">
+        <div class="logo">NEXUS</div>
+        <div class="nav-links">
+            <a href="index.html" style="color: var(--primary)">Accueil</a>
+            <a href="vision.html">Vision</a>
+            <a href="technologie.html">Technologie</a>
+        </div>
+        <button id="theme-toggle" aria-label="Changer le thème">
+            <i class="ph ph-sun-dim"></i>
+        </button>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content glass fade-in">
+                <h1>L'AVENIR EST <span class="gradient-text">MAINTENANT</span></h1>
+                <p>Une expérience numérique immersive, fluide et réactive. Conçu pour la prochaine génération du web.</p>
+                <div class="cta-group">
+                    <a href="vision.html"><button class="btn-primary">Commencer <i class="ph ph-arrow-right"></i></button></a>
+                    <a href="technologie.html"><button class="btn-secondary">Architecture</button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards-container">
+            <div class="card glass fade-in delay-1">
+                <i class="ph ph-lightning"></i>
+                <h3>Performance</h3>
+                <p>Vitesse d'exécution optimisée via WebAssembly pour une fluidité absolue.</p>
+            </div>
+            <div class="card glass fade-in delay-2">
+                <i class="ph ph-shield-check"></i>
+                <h3>Sécurité</h3>
+                <p>Architecture chiffrée de bout en bout protégeant l'intégrité des données.</p>
+            </div>
+            <div class="card glass fade-in delay-3">
+                <i class="ph ph-paint-brush-broad"></i>
+                <h3>Design</h3>
+                <p>Interface utilisateur intuitive utilisant les principes du Glassmorphism 2.0.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
